@@ -7,7 +7,7 @@ public class Selection2Exp1Number12 {
         System.out.print("Input the year = ");
         int year = input12.nextInt();
         
-       
+    
         //determine leap year
         if (year % 4 == 0) {
             if (year % 100 != 0) {
