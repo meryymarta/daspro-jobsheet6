@@ -13,7 +13,7 @@ public class Selecton2Exp3Number12 {
         System.out.print("Input income = ");
         income = input12.nextInt();
 
-        if(category.equalsIgnoreCase("worker")) {
+        if(category.equals("worker")) {
             if (income <= 2000000)
                 tax = 0.1;
             else if (income <= 3000000)
@@ -22,7 +22,7 @@ public class Selecton2Exp3Number12 {
                 tax = 0.2;
                 netSalary = (int) (income - (tax * income));
                 System.out.println("Net Salary = " + netSalary);
-            } else if (category.equalsIgnoreCase("businessman")){
+            } else if (category.equals("businessman")){
                 if (income <= 2500000)
                     tax = 0.15;
                 else if (income <= 3500000)
