@@ -13,8 +13,8 @@ public class ShoeStoreNumber12 {
         int price = 0;
         
 
-        if (brand.equals("Converse")) {
-            if (category.equals("Slip On")) {
+        if (brand.equalsIgnoreCase("Converse")) {
+            if (category.equalsIgnoreCase("Slip On")) {
                 if (size  >= 36 && size <= 40) {
                     price = 8000000;
                 }
@@ -23,8 +23,8 @@ public class ShoeStoreNumber12 {
                     price = 120000;
                 }
             }
-        } else if (brand.equals("Sketcher")) {
-                if (category.equals("Woman")) {
+        } else if (brand.equalsIgnoreCase("Sketcher")) {
+                if (category.equalsIgnoreCase("Woman")) {
                     if (size >= 36 && size <=41) {
                         price = 1000000;
                     }
@@ -33,12 +33,12 @@ public class ShoeStoreNumber12 {
                             price = 1800000;
                         }
                     }
-                } else if (brand.equals("Nike")) {
-                    if (category.equals("Kids")) {
+                } else if (brand.equalsIgnoreCase("Nike")) {
+                    if (category.equalsIgnoreCase("Kids")) {
                         if (size >= 36 && size <= 40) {
                             price = 750000;
                         }
-                    } else if (brand.equals("Adult")) {
+                    } else if (category.equalsIgnoreCase("Adult")) {
                         if (size >=40 && size <=44) {
                             price = 150000;
                         }
